@@ -1,16 +1,18 @@
 FROM alpine:3.8
 
-LABEL namespace="me.robertcsmith.wufgear" \
-	me.robertcsmith.wufgear.base.name="base" \
-	me.robertcsmith.wufgear.base.release="1.1" \
-	me.robertcsmith.wufgear.base.flavor="-alpine3.8" \
-	me.robertcsmith.wufgear.base.version="-docker" \
-	me.robertcsmith.wufgear.base.tag=":latest, :1.1" \
-	me.robertcsmith.wufgear.base.image="me.robertcsmith.wufgear/base1.0-alpine3.8-docker:1.1" \
-	me.robertcsmith.wufgear.base.vcs-url="https://github.com/robertcsmith/base1.1-alpine3.8-docker:latest" \
-	me.robertcsmith.wufgear.base.maintainer="Robert C Smith <robertchristophersmith@gmail.com>" \
-	me.robertcsmith.wufgear.base.usage="README.md" \
-	me.robertcsmith.wufgear.base.description="This image adds necessary build tools and removes them for images needing a \
+# TODO: Formatting changes, tabs to spaces
+
+LABEL namespace="robertcsmith" \
+	robertcsmith.base.name="base" \
+	robertcsmith.base.release="1.1" \
+	robertcsmith.base.flavor="-alpine3.8" \
+	robertcsmith.base.version="-docker" \
+	robertcsmith.base.tag=":latest, :1.1" \
+	robertcsmith.base.image="robertcsmith/base1.0-alpine3.8-docker:1.1" \
+	robertcsmith.base.vcs-url="https://github.com/robertcsmith/base1.1-alpine3.8-docker" \
+	robertcsmith.base.maintainer="Robert C Smith <robertchristophersmith@gmail.com>" \
+	robertcsmith.base.usage="README.md" \
+	robertcsmith.base.description="This image adds necessary build tools and removes them for images needing a \
 		common set of build packages. All wufgear images SHOULD be a decendant of this image. Usage is simple: \
 			  - This Dockerfile creates an image that ensures almost all packages necessary to properly build \
 				your service are installed ensuring easy access to said tools. Almost all images however have \
