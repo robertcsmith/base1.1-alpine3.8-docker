@@ -1,6 +1,6 @@
 # Wufgear project's Base Docker image running on Alpine Linux 3.8
 
-This Docker image [(robertchristophersmith/base1.1-alpine3.8-docker](https://hub.docker.com/r/robertchristophersmith/base1.1-alpine3.8-dockerb/) is based on the minimal [Alpine Linux](https://alpinelinux.org/).
+This Docker image [(robertcsmith/base1.1-alpine3.8-docker](https://github.com/robertcsmith/base1.1-alpine3.8-docker) is based on the minimal [Alpine Linux](https://alpinelinux.org/).
 
 ##### Alpine Version 3.8.0 (Released Nov 30, 2017)
 ##### Base Version 1.1.0
