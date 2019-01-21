@@ -1,13 +1,15 @@
 #!/bin/bash
-set -e;
+
+set -ex;
 
 if [[ "--add" == $1 || "--install" == $1 ]]; then
-	apk update;
+
+    apk update;
 	apk upgrade;
-	apk add --no-cache ${BASE_PKGS};
+	apk add --no-cache $BASE_PKGS;
 elif [[ "--delete" == $1 || "--remove" == $1 || "--uninstall" == $1 ]]; then
-	apk del ${BASE_PKGS};
-	rm -rf /var/cache/apk/* 2>/dev/null;
+	apk del $BASE_PKGS;
+	rm -rf /var/cache/apk/* 2 >/dev/null;
 else
 	echo "This script ADDs (installs) or DELETEs (uninstalls) the packages listed within the \
 \$BASE_PKGS environmental variable which defaults to the following:\
